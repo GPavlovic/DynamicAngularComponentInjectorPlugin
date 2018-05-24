@@ -1,6 +1,6 @@
 {
 	"name": "dynamic-angular-component-injector-plugin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Webpack plugin to dynamically swap angular component implementations based on provided component file name prefix.",
 	"main": "index.js",
 	"scripts": {},
@@ -17,10 +17,13 @@
 		"url": "https://github.com/GPavlovic/DynamicAngularComponentInjectorPlugin/issues"
 	},
 	"homepage": "https://github.com/GPavlovic/DynamicAngularComponentInjectorPlugin#readme",
-	"dependencies": {
-		"webpack": "^4.8.3"
-	},
-	"devDependencies": {
-		"@types/webpack": "^4.4.0"
-	}
+	"dependencies": {},
+	"devDependencies": {},
+	"tags": [
+		"webpack",
+		"plugin",
+		"resolver",
+		"webpack-plugin",
+		"angular"
+	]
 }
