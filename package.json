@@ -1,27 +1,27 @@
 {
-  "name": "dynamicfilecontentinjectorplugin",
-  "version": "0.0.1",
-  "description": "Webpack plugin to dynamically change the contents of files based on provided preferred file parameters.",
-  "main": "dist/DynamicFileContentInjectorPlugin.js",
-  "scripts": {
-    "build": "tsc --version && tsc",
-  },
-  "keywords": [
-    "webpack",
-    "plugin"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GPavlovic/DynamicFileContentInjectorPlugin.git"
-  },
-  "author": "Goran Pavlovic <gp.goranpavlovic@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/GPavlovic/DynamicFileContentInjectorPlugin/issues"
-  },
-  "homepage": "https://github.com/GPavlovic/DynamicFileContentInjectorPlugin#readme",
-  "dependencies": {
-  },
-  "devDependencies": {
-    "@types/typescript": "^2.0.0"
-  }
+	"name": "dynamicangularcomponentinjectorplugin",
+	"version": "0.0.1",
+	"description": "Webpack plugin to dynamically swap angular component implementations based on provided component file name prefix.",
+	"main": "index.js",
+	"scripts": {
+	},
+	"keywords": [
+		"webpack",
+		"plugin"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GPavlovic/DynamicAngularComponentInjectorPlugin.git"
+	},
+	"author": "Goran Pavlovic <gp.goranpavlovic@gmail.com>",
+	"bugs": {
+		"url": "https://github.com/GPavlovic/DynamicAngularComponentInjectorPlugin/issues"
+	},
+	"homepage": "https://github.com/GPavlovic/DynamicAngularComponentInjectorPlugin#readme",
+	"dependencies": {
+		"webpack": "^4.8.3"
+	},
+	"devDependencies": {
+		"@types/webpack": "^4.4.0"
+	}
 }

@@ -1,2 +1,2 @@
-# DynamicFileContentInjectorPlugin for Webpack
-Webpack plugin to dynamically change the contents of files based on provided preferred file parameters.
+# DynamicAngularComponentInjectorPlugin for Webpack
+Webpack plugin to dynamically swap angular component implementations based on provided component file name prefix.
