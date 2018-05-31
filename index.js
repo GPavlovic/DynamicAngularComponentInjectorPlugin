@@ -23,7 +23,19 @@ class DynamicAngularComponentInjectorPlugin {
         var getFilePath = function (relativeRequest, parentPath) {
             // Strip any relative path traversals
             let strippedRelativeRequest = relativeRequest.replace(/^.+\.\//, '');
-            return path.join(parentPath, strippedRelativeRequest);
+            // Need to find any traversals up in the relative request, so we can account for them in our new path
+            let splitRequest = relativeRequest.split('/');
+            let splitParentPath = parentPath.split('\\');
+            for (let relativePathEl of splitRequest)
+            {
+                if (relativePathEl != '..') 
+                {
+                    break;
+                }
+                splitParentPath.pop();
+            }
+            let filePath = path.join(...splitParentPath, strippedRelativeRequest);
+            return filePath;
         }
 
         /**
