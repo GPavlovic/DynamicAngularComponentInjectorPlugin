@@ -102,6 +102,11 @@ class DynamicAngularComponentInjectorPlugin {
                 callback();
                 return;
             }
+
+            // Replace slashes for consistency across request sources
+            request.request = request.request.replace(/[\\]/g, "/");
+            request.path = request.path.replace(/[\\]/g, "/");
+
             let newRequest = {};
             let preferredFilePrefixFileName = getPreferredFileName(request, preferredFilePrefix);
             let newRelativeRequest = getPreferredRequest(request, preferredFilePrefixFileName);
